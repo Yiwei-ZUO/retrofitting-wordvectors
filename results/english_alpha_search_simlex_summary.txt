@@ -1,0 +1,54 @@
+=== Alpha Search on SimLex-999 only ===
+WN_syn + inverse_degree beta, FULL GloVe vocabulary
+Alpha values: [0.111, 0.25, 0.429, 0.667, 1.0, 1.5, 2.333, 4.0, 9.0]
+
+=== Loading GloVe embeddings (full vocabulary) ===
+Loaded: 400000 words in 8.8s
+
+=== Building WN_syn graph ===
+Graph nodes: 68807 built in 5.4s
+
+=== Loading SimLex-999 ===
+=== Evaluating original GloVe baseline on SimLex-999 ===
+Original rho=0.3705, coverage=999/999
+
+=== alpha=0.111 ===
+  Runtime: 8.35s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 331193, 'words_updated': 68807, 'words_unchanged': 331193}
+  SimLex-999: 0.3705 -> 0.3879 (+0.0174)
+
+=== alpha=0.250 ===
+  Runtime: 8.79s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 331193, 'words_updated': 68807, 'words_unchanged': 331193}
+  SimLex-999: 0.3705 -> 0.4456 (+0.0751)
+
+=== alpha=0.429 ===
+  Runtime: 8.17s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 331193, 'words_updated': 68807, 'words_unchanged': 331193}
+  SimLex-999: 0.3705 -> 0.4576 (+0.0871)
+
+=== alpha=0.667 ===
+  Runtime: 8.33s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 331193, 'words_updated': 68807, 'words_unchanged': 331193}
+  SimLex-999: 0.3705 -> 0.4543 (+0.0838)
+
+=== alpha=1.000 ===
+  Runtime: 8.09s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 331193, 'words_updated': 68807, 'words_unchanged': 331193}
+  SimLex-999: 0.3705 -> 0.4454 (+0.0749)
+
+=== alpha=1.500 ===
+  Runtime: 8.94s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 331193, 'words_updated': 68807, 'words_unchanged': 331193}
+  SimLex-999: 0.3705 -> 0.4335 (+0.0630)
+
+=== alpha=2.333 ===
+  Runtime: 8.22s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 331193, 'words_updated': 68807, 'words_unchanged': 331193}
+  SimLex-999: 0.3705 -> 0.4194 (+0.0489)
+
+=== alpha=4.000 ===
+  Runtime: 9.38s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 331193, 'words_updated': 68807, 'words_unchanged': 331193}
+  SimLex-999: 0.3705 -> 0.4042 (+0.0337)
+
+=== alpha=9.000 ===
+  Runtime: 9.24s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 331193, 'words_updated': 68807, 'words_unchanged': 331193}
+  SimLex-999: 0.3705 -> 0.3877 (+0.0172)
+
+CSV saved to /Users/yiwei/Downloads/retrofitting-wordvectors-final/results/english_alpha_search_simlex_results.csv
+
+=== BEST ALPHA = 0.429 (SimLex-999 rho=0.4576) ===
+Best alpha saved to /Users/yiwei/Downloads/retrofitting-wordvectors-final/results/best_alpha.txt

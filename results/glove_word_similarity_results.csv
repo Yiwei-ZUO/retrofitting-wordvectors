@@ -1,0 +1,7 @@
+combo,dataset,original_rho,retrofitted_rho,delta,covered_pairs,total_pairs
+GloVe+WN_syn,WS-353,0.6085,0.6074,-0.0012,353,353
+GloVe+WN_syn,RG-65,0.7695,0.7773,0.0078,65,65
+GloVe+WN_all,WS-353,0.6085,0.604,-0.0045,353,353
+GloVe+WN_all,RG-65,0.7695,0.8744,0.1048,65,65
+GloVe+PPDB,WS-353,0.6085,0.5326,-0.0759,353,353
+GloVe+PPDB,RG-65,0.7695,0.8074,0.0379,65,65

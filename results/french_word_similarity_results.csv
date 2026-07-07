@@ -1,0 +1,5 @@
+combo,dataset,original_rho,retrofitted_rho,delta,covered_pairs,total_pairs
+fastText+WOLF_syn,WS-353_FR,0.5328,0.5033,-0.0295,333,353
+fastText+WOLF_syn,RG-65_FR,0.8258,0.8377,0.0119,63,65
+fastText+WOLF_all,WS-353_FR,0.5328,0.4988,-0.034,333,353
+fastText+WOLF_all,RG-65_FR,0.8258,0.85,0.0242,63,65

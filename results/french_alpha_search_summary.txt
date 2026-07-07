@@ -1,0 +1,54 @@
+=== Alpha Search on French SimLex ===
+fastText + WOLF_syn, inverse_degree beta
+Alpha values: [0.111, 0.25, 0.429, 0.667, 1.0, 1.5, 2.333, 4.0, 9.0]
+
+=== Loading French fastText (limited to 300000 words) ===
+Loaded: 300000 words in 6.5s
+
+=== Building WOLF_syn graph ===
+Graph nodes: 13207 built in 0.6s
+
+=== Loading French SimLex ===
+=== Evaluating original fastText baseline ===
+Original rho=0.3206, coverage=908/999
+
+=== alpha=0.111 ===
+  Runtime: 2.61s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 286793, 'words_updated': 13207, 'words_unchanged': 286793}
+  French_SimLex: 0.3206 -> 0.2736 (-0.0470)
+
+=== alpha=0.250 ===
+  Runtime: 2.58s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 286793, 'words_updated': 13207, 'words_unchanged': 286793}
+  French_SimLex: 0.3206 -> 0.3085 (-0.0121)
+
+=== alpha=0.429 ===
+  Runtime: 2.70s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 286793, 'words_updated': 13207, 'words_unchanged': 286793}
+  French_SimLex: 0.3206 -> 0.3318 (+0.0112)
+
+=== alpha=0.667 ===
+  Runtime: 2.66s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 286793, 'words_updated': 13207, 'words_unchanged': 286793}
+  French_SimLex: 0.3206 -> 0.3445 (+0.0239)
+
+=== alpha=1.000 ===
+  Runtime: 2.42s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 286793, 'words_updated': 13207, 'words_unchanged': 286793}
+  French_SimLex: 0.3206 -> 0.3525 (+0.0319)
+
+=== alpha=1.500 ===
+  Runtime: 2.23s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 286793, 'words_updated': 13207, 'words_unchanged': 286793}
+  French_SimLex: 0.3206 -> 0.3550 (+0.0344)
+
+=== alpha=2.333 ===
+  Runtime: 2.34s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 286793, 'words_updated': 13207, 'words_unchanged': 286793}
+  French_SimLex: 0.3206 -> 0.3552 (+0.0346)
+
+=== alpha=4.000 ===
+  Runtime: 2.50s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 286793, 'words_updated': 13207, 'words_unchanged': 286793}
+  French_SimLex: 0.3206 -> 0.3485 (+0.0279)
+
+=== alpha=9.000 ===
+  Runtime: 2.23s  |  stats: {'oov_neighbours_skipped': 0, 'words_with_no_valid_neighbours': 286793, 'words_updated': 13207, 'words_unchanged': 286793}
+  French_SimLex: 0.3206 -> 0.3373 (+0.0166)
+
+CSV saved to /Users/yiwei/Downloads/retrofitting-wordvectors-final/results/french_alpha_search_simlex_results.csv
+
+=== BEST ALPHA (French) = 2.333 (French_SimLex rho=0.3552) ===
+Best French alpha saved to /Users/yiwei/Downloads/retrofitting-wordvectors-final/results/best_alpha_french.txt
